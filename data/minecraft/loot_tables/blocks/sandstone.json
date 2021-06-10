@@ -9,13 +9,32 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:flint",
+          "name": "minecraft:redstone",
           "weight": 30,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 0,
+                "min": 3,
+                "max": 20
+              }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone_torch",
+          "weight": 33,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
                 "max": 2
               }
             },
@@ -28,33 +47,14 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:obsidian",
-          "weight": 33,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 0,
-                "max": 4
-              }
-            },
-            {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:ore_drops"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:end_portal_frame",
+          "name": "minecraft:redstone_lamp",
           "weight": 20,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 0,
-                "max": 6
+                "min": 2,
+                "max": 30
               }
             },
             {
@@ -66,14 +66,14 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:ender_eye",
+          "name": "minecraft:redstone_ore",
           "weight": 15,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 0,
-                "max": 6
+                "min": 1,
+                "max": 3
               }
             },
             {
@@ -85,13 +85,13 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:ender_pearl",
+          "name": "minecraft:redstone_block",
           "weight": 2,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 3,
+                "min": 2,
                 "max": 5
               }
             },
